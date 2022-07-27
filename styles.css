@@ -16,6 +16,10 @@ body{
     filter: drop-shadow(5px 5px 5px #222);
 }
 
+.logo-container{
+    padding-top: 20px;
+}
+
 
 header{
     display: flex;
@@ -83,4 +87,25 @@ header{
 
 .h3{
     padding-top: 30px;
+}
+
+@media (max-width: 580px) {
+    .logo-container img{
+        height: 130px;
+    }
+    .pokemon{
+        width: 246px;
+        height: 369px;
+    }
+    .text{
+        margin: 20px;
+        padding-bottom: 5px;
+    }
+    .image-container {
+        margin-bottom: 25px;
+        padding-top: 0px;
+    }
+    .pokemon h2{
+        font-size: 14px;
+    }
 }
