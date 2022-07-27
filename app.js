@@ -21,8 +21,10 @@ const createPokemonCard = (pokemon) => {
     pokemonElement.classList.add('pokemon')
     const pokemonToHtml = `
     <h3>${id}</h3>
-    <h2>${name}</h2>
-    <h4>${type}</h4>
+    <div class="text">
+        <h2>${name}</h2>
+        <h4>${type}</h4>
+    </div>
     <div class="image-container">
         <img src="${sprites.other.home.front_default}" alt="${name}"/>
     </div>
