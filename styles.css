@@ -26,7 +26,7 @@ header{
     justify-content: center;
 }
 
-.pokemon{
+.POKEMONCARD{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -47,12 +47,18 @@ header{
     box-shadow: 2px 2px 12px;
 }
 
-.pokemon img{
+.front{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.POKEMONCARD img{
     height: 200px;
     filter: drop-shadow(5px 5px 5px #222);
 }
 
-.pokemon h2{
+.POKEMONCARD h2{
     text-transform: uppercase;
 }
 
@@ -74,7 +80,7 @@ header{
 .text {
     display: flex;
     font-size: 12px;
-    width: 100%;
+    width: 150%;
     justify-content: space-around;
     align-items: center;
     margin: 32px;
@@ -93,7 +99,7 @@ header{
     .logo-container img{
         height: 130px;
     }
-    .pokemon{
+    .POKEMONCARD{
         width: 246px;
         height: 369px;
     }
@@ -105,7 +111,7 @@ header{
         margin-bottom: 25px;
         padding-top: 0px;
     }
-    .pokemon h2{
+    .POKEMONCARD h2{
         font-size: 14px;
     }
 }

@@ -1,5 +1,6 @@
 const container = document.querySelector('.pokemon-container');
 const pokemon_number = 151;
+const btnFIRE = document.querySelector ('#fire');
 
 const fetchPokemons = async () => {
     for (let i = 1; i < pokemon_number; i++) {
@@ -32,5 +33,6 @@ const createPokemonCard = (pokemon) => {
     container.appendChild(pokemonElement)
     pokemonElement.innerHTML = pokemonToHtml
 }
+
 
 fetchPokemons()
