@@ -62,15 +62,13 @@ const printPokemons = (list) =>{
 };
 
 
-const filterPokemons = () =>{
+const filterPokemons = (id) =>{
     const filteredPokemons = mappedPokemons.filter(
-        pokemon => pokemon.type == allButtonsResolve
+        (pokemon) => pokemon.type == id
     );
     printPokemons(filteredPokemons);
 };
 
-btnFIRE.addEventListener('click', filterPokemons)
-btnWATER.addEventListener('click', filterPokemons)
 btnAll.addEventListener('click', init)
 
 init();
